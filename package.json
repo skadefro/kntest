@@ -1,0 +1,28 @@
+{
+  "name": "@openiap/nodeworkitemagent",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "keywords": [],
+  "scripts": {
+    "updateapidev": "npm uninstall @openiap/nodeapi && npm i openiap/nodeapi",
+    "updateapi": "npm uninstall @openiap/nodeapi && npm i @openiap/nodeapi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openiap/nodeworkitemagent.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "OpenIAP ApS / Allan Zimmermann",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://community.openiap.io/"
+  },
+  "homepage": "https://github.com/openiap/nodepai",
+  "funding": "https://github.com/sponsors/skadefro",
+  "dependencies": {
+    "@openiap/nodeapi": "github:openiap/nodeapi"
+  }
+}

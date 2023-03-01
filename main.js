@@ -73,7 +73,9 @@ async function ProcessWorkitemWrapper(workitem) {
     files = fs.readdirSync(__dirname);
     files = files.filter(x => original.indexOf(x) == -1);
     files.forEach(file => {
-        fs.unlinkSync(file);
+        if (fs.lstatSync(file).isFile()) {
+            fs.unlinkSync(file);
+        }
     });
 }
 async function onConnected(client) {
